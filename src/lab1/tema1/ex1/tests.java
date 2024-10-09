@@ -1,4 +1,4 @@
-package lab1;
+package lab1.tema1.ex1;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -15,7 +15,7 @@ public class tests {
          */
         int[] A1 = {1, 0, 1, 1, 0, 0};
         int n1 = A1.length;
-        assertTrue(temaEx1.KSpecial(A1, n1, 3));
+        assertTrue(TemaEx1.KSpecial(A1, n1, 3));
     }
 
     @Test
@@ -25,7 +25,7 @@ public class tests {
          */
         int[] A2 = {1, 1, 0, 0, 1, 0};
         int n2 = A2.length;
-        assertFalse(temaEx1.KSpecial(A2, n2, 3));
+        assertFalse(TemaEx1.KSpecial(A2, n2, 3));
     }
 
     @Test
@@ -35,7 +35,7 @@ public class tests {
          */
         int[] A3 = {1, 1, 1};
         int n3 = A3.length;
-        assertTrue(temaEx1.KSpecial(A3, n3, 3));
+        assertTrue(TemaEx1.KSpecial(A3, n3, 3));
     }
 
     @Test
@@ -45,7 +45,7 @@ public class tests {
          */
         int[] A4 = {1, 0, 0};
         int n4 = A4.length;
-        assertFalse(temaEx1.KSpecial(A4, n4, 2));
+        assertFalse(TemaEx1.KSpecial(A4, n4, 2));
     }
 
     @Test
@@ -55,7 +55,7 @@ public class tests {
          */
         int[] A5 = {1, 0, 1};
         int n5 = A5.length;
-        assertTrue(temaEx1.KSpecial(A5, n5, 2));
+        assertTrue(TemaEx1.KSpecial(A5, n5, 2));
     }
 
     @Test
@@ -65,7 +65,7 @@ public class tests {
          */
         int[] A6 = {1, 0, 0, 1};
         int n6 = A6.length;
-        assertFalse(temaEx1.KSpecial(A6, n6, 2));
+        assertFalse(TemaEx1.KSpecial(A6, n6, 2));
     }
 }
 

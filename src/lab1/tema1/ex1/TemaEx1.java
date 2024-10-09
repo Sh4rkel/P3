@@ -1,6 +1,6 @@
-package lab1;
+package lab1.tema1.ex1;
 
-public class temaEx1 {
+public class TemaEx1 {
     /**
      *
      * @param A: array-ul de biti
