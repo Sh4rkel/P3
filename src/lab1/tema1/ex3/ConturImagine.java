@@ -20,22 +20,22 @@ public class ConturImagine {
         /**
          * Nuantele din primele si ultimele randuri
          */
-        int firstRowValue = image[0][0];
-        int lastRowValue = image[rows - 1][0];
+        int valPrimulRand = image[0][0];
+        int valUtimulRand = image[rows - 1][0];
 
         /**
          * Nuantele din primele si ultimele coloane
          */
-        int firstColValue = image[0][0];
-        int lastColValue = image[0][cols - 1];
+        int valPrimaColoana = image[0][0];
+        int valUltimaColoana = image[0][cols - 1];
 
         /**
          *  Verificam dacă prima si ultima linie sunt identice
          */
-        boolean firstRowSame = true;
+        boolean primulRand = true;
         for (int j = 0; j < cols; j++) {
-            if (image[0][j] != firstRowValue || image[rows - 1][j] != lastRowValue) {
-                firstRowSame = false;
+            if (image[0][j] != valUtimulRand || image[rows - 1][j] != valUtimulRand) {
+                primulRand = false;
                 break;
             }
         }
@@ -43,10 +43,10 @@ public class ConturImagine {
         /**
          * Verificam daca prima si ultima coloana sunt identice
          */
-        boolean firstColSame = true;
+        boolean primaColoana = true;
         for (int i = 0; i < rows; i++) {
-            if (image[i][0] != firstColValue || image[i][cols - 1] != lastColValue) {
-                firstColSame = false;
+            if (image[i][0] != valPrimaColoana || image[i][cols - 1] != valUltimaColoana) {
+                primaColoana = false;
                 break;
             }
         }
@@ -54,15 +54,15 @@ public class ConturImagine {
         /**
          * Verificam conturul
          */
-        if (firstRowSame && firstColSame) {
+        if (primulRand && primaColoana) {
             /**
              * Conturul este definit de nuantele din prima linie si prima coloana
              */
-            return firstRowValue == firstColValue ? 1 : 0;
-        } else if (firstRowSame) {
-            return firstRowValue == lastColValue ? 1 : 0;
-        } else if (firstColSame) {
-            return firstColValue == lastRowValue ? 1 : 0;
+            return valUtimulRand == valPrimaColoana ? 1 : 0;
+        } else if (primulRand) {
+            return valPrimulRand == valUltimaColoana ? 1 : 0;
+        } else if (primaColoana) {
+            return valPrimaColoana == valUtimulRand ? 1 : 0;
         }
         /**
          * Nu avem contur
