@@ -3,7 +3,8 @@ package lab1.exercitiiSuplimentare.ex1;
 public class Factorial {
     /**
      *
-     * @param args
+     * @param args: argumentele preluate de pe linia de coamanda,
+     *              in cazul acesta ar trebui sa fie un numar intreg
      */
     public static void main(String[] args) {
         // Verificam daca avem un argument pe linia de comanda
