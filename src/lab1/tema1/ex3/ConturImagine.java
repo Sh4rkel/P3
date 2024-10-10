@@ -4,7 +4,7 @@ public class ConturImagine {
     /**
      *
      * @param image
-     * @return
+     * @return 1 daca avem contur si 0 daca nu avem
      */
     public static int getDimensiuneContur(int[][] image) {
         /**
