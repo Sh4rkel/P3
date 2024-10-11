@@ -15,7 +15,6 @@ public class tests {
                 {14.0, 17.5, 21.0}
         };
 
-        // Verificam daca matricea calculata este corecta
         assertArrayEquals(expectedM, Tablouri.calculeazaMatriceaM(a, b));
     }
 
@@ -25,7 +24,6 @@ public class tests {
         double[] b = {4.0, 5.0, 2.0};
         double[] expectedV = {1.5, 2.5, 2.0};
 
-        // Verificam daca vectorul calculat este corect
         assertArrayEquals(expectedV, Tablouri.calculeazaVectorulV(a, b), 0.0001);
     }
 
@@ -39,7 +37,6 @@ public class tests {
                 {-14.0, 17.5, -21.0}
         };
 
-        // Verificam daca matricea calculata este corecta pentru valori negative
         assertArrayEquals(expectedM, Tablouri.calculeazaMatriceaM(a, b));
     }
 
@@ -49,7 +46,6 @@ public class tests {
         double[] b = {4.0, -5.0, -2.0};
         double[] expectedV = {-1.5, -5.0, -3.5};
 
-        // Verificam daca vectorul calculat este corect pentru valori negative
         assertArrayEquals(expectedV, Tablouri.calculeazaVectorulV(a, b), 0.0001);
     }
 }
