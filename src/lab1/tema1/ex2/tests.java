@@ -1,5 +1,9 @@
 package lab1.tema1.ex2;
 
+/**
+ * @author Daniel Filip
+ */
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 
