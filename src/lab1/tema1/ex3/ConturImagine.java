@@ -75,4 +75,16 @@ public class ConturImagine {
          */
         return 0;
     }
+
+    public static void main(String[] args) {
+        int[][] image = {
+                {100, 100, 100, 100},
+                {100, 150, 100, 100},
+                {100, 100, 200, 100},
+                {100, 100, 100, 100}
+        };
+
+        int contourSize = getDimensiuneContur(image);
+        System.out.println("Dimensiunea conturului este: " + contourSize); // Ar trebui sa fie 1
+    }
 }
