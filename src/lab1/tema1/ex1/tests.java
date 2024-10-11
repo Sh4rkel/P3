@@ -1,11 +1,12 @@
 package lab1.tema1.ex1;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
-
 /**
  * @author Daniel Filip
  */
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
 public class tests {
 
     @Test
