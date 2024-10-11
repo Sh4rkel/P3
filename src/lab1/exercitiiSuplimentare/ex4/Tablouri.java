@@ -38,7 +38,10 @@ public class Tablouri {
         return vectorV;
     }
 
-    // Functia pentru afisarea unei matrice
+    /**
+     * Functia asta are scop afisearea vectorului construit de functia calculeazaMatriceaM
+     * @param matrice
+     */
     public static void afiseazaMatrice(double[][] matrice) {
         for (double[] linie : matrice) {
             for (double element : linie) {
@@ -49,7 +52,7 @@ public class Tablouri {
     }
 
     /**
-     * Functia asta are scop afisearea vectorului
+     * Functia asta are scop afisearea vectorului construit de functia calculeazaVectorulV
      * @param vector
      */
     public static void afiseazaVector(double[] vector) {
@@ -59,24 +62,28 @@ public class Tablouri {
         System.out.println();
     }
 
-//    public static void main(String[] args) {
-//        // Initializam doua tablouri constante de numere reale
-//        double[] a = {1.5, 2.5, 3.5};
-//        double[] b = {4.0, 5.0, 6.0};
-//
-//        // Calculam si afisam matricea m
-//        double[][] matriceM = calculeazaMatriceaM(a, b);
-//        System.out.println("Matricea M:");
-//        afiseazaMatrice(matriceM);
-//
-//        /**
-//         * 1. Calculam valoarea vectorului folosind methoda calculeazaVectorul, care are 2 parametri.
-//         * 2. Printam vectorul folosind functia afiseazaVector,
-//         *    care primeste ca parametru unic valoarea stocata in array-ul vectorV
-//         */
-//        double[] vectorV = calculeazaVectorulV(a, b);
-//        System.out.println("Vectorul V:");
-//        afiseazaVector(vectorV);
-//    }
+    public static void main(String[] args) {
+        // Initializam doua tablouri constante de numere reale
+        double[] a = {1.5, 2.5, 3.5};
+        double[] b = {4.0, 5.0, 6.0};
+
+        /**
+        * 1. Calculam valoarea matricii folosind methoda calculeazaMatriceaM, care are 2 parametri.
+        * 2. Printam matricea folosind functia afiseazaMatriceaM,
+        *    care primeste ca parametru unic valoarea stocata in variabila matriceM
+        */
+        double[][] matriceM = calculeazaMatriceaM(a, b);
+        System.out.println("Matricea M:");
+        afiseazaMatrice(matriceM);
+
+        /**
+         * 1. Calculam valoarea vectorului folosind methoda calculeazaVectorulV, care are 2 parametri.
+         * 2. Printam vectorul folosind functia afiseazaVector,
+         *    care primeste ca parametru unic valoarea stocata in variabila vectorV
+         */
+        double[] vectorV = calculeazaVectorulV(a, b);
+        System.out.println("Vectorul V:");
+        afiseazaVector(vectorV);
+    }
 }
 
