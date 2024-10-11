@@ -3,38 +3,40 @@ package lab1.tema1.ex3;
 public class ConturImagine {
     /**
      *
-     * @param image
+     * @param imag
      * @return 1 daca avem contur si 0 daca nu avem
      */
-    public static int getDimensiuneContur(int[][] image) {
+    public static int getDimensiuneContur(int[][] imag) {
         /**
          * Verificam daca matricea este goala
          */
-        if (image.length == 0 || image[0].length == 0) {
+        if (imag.length == 0 || imag[0].length == 0) {
             return 0;
         }
 
-        int rows = image.length;
-        int cols = image[0].length;
+        int rows = imag.length;
+        int cols = imag[0].length;
 
         /**
          * Nuantele din primele si ultimele randuri
          */
-        int valPrimulRand = image[0][0];
-        int valUtimulRand = image[rows - 1][0];
+        int valPrimulRand = imag[0][0];
+        int valUtimulRand = imag[rows - 1][0];
 
         /**
-         * Nuantele din primele si ultimele coloane
+         * Culorile din primele si ultimele coloane
          */
-        int valPrimaColoana = image[0][0];
-        int valUltimaColoana = image[0][cols - 1];
+        int valPrimaColoana = imag[0][0];
+        int valUltimaColoana = imag[0][cols - 1];
 
         /**
-         *  Verificam dacă prima si ultima linie sunt identice
+         *  @param primulRand
+         *  Verificam dacă prima si ultima linie sunt identice,
+         *  daca nu sunt atunci modificam valaorea de adevar a variabilei primulRand din True in False si abandonam
          */
         boolean primulRand = true;
         for (int j = 0; j < cols; j++) {
-            if (image[0][j] != valUtimulRand || image[rows - 1][j] != valUtimulRand) {
+            if (imag[0][j] != valUtimulRand || imag[rows - 1][j] != valUtimulRand) {
                 primulRand = false;
                 break;
             }
@@ -45,7 +47,7 @@ public class ConturImagine {
          */
         boolean primaColoana = true;
         for (int i = 0; i < rows; i++) {
-            if (image[i][0] != valPrimaColoana || image[i][cols - 1] != valUltimaColoana) {
+            if (imag[i][0] != valPrimaColoana || imag[i][cols - 1] != valUltimaColoana) {
                 primaColoana = false;
                 break;
             }

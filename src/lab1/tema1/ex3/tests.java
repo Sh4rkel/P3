@@ -2,40 +2,40 @@ package lab1.tema1.ex3;
 
 public class tests {
     public static void testGetContourSize() {
-        int[][] image1 = {
+        int[][] imag1 = {
                 {100, 100, 100, 100},
                 {100, 150, 100, 100},
                 {100, 100, 200, 100},
                 {100, 100, 100, 100}
         };
-        System.out.println(ConturImagine.getDimensiuneContur(image1)); // 1
+        System.out.println(ConturImagine.getDimensiuneContur(imag1)); // 1
 
-        int[][] image2 = {
+        int[][] imag2 = {
                 {255, 255, 255},
                 {255, 0, 255},
                 {255, 255, 255}
         };
-        System.out.println(ConturImagine.getDimensiuneContur(image2)); // 1
+        System.out.println(ConturImagine.getDimensiuneContur(imag2)); // 1
 
-        int[][] image3 = {
+        int[][] imag3 = {
                 {200, 200, 200},
                 {200, 200, 200},
                 {200, 200, 200}
         };
-        System.out.println(ConturImagine.getDimensiuneContur(image3)); // 1
+        System.out.println(ConturImagine.getDimensiuneContur(imag3)); // 1
 
-        int[][] image4 = {
+        int[][] imag4 = {
                 {100, 200},
                 {200, 100}
         };
-        System.out.println(ConturImagine.getDimensiuneContur(image4)); // 0
+        System.out.println(ConturImagine.getDimensiuneContur(imag4)); // 0
 
-        int[][] image5 = {
+        int[][] imag5 = {
                 {50, 50, 50},
                 {50, 50, 50},
                 {50, 50, 50}
         };
-        System.out.println(ConturImagine.getDimensiuneContur(image5)); // 1
+        System.out.println(ConturImagine.getDimensiuneContur(imag5)); // 1
     }
 
 }
