@@ -64,4 +64,25 @@ public class KSpecial {
         return countZerouri == k;
     }
 
+    public static void main(String[] args) {
+        // Test 1: Sirul 101100 este 3-special
+        int[] A1 = {1, 0, 1, 1, 0, 0};
+        int n1 = A1.length;
+        System.out.println(KSpecial(A1, n1, 3)); // True
+
+        // Test 2: Sirul 110010 nu este 3-special
+        int[] A2 = {1, 1, 0, 0, 1, 0};
+        int n2 = A2.length;
+        System.out.println(KSpecial(A2, n2, 3)); // False
+
+        // Test 3: Sirul 111 este 3-special
+        int[] A3 = {1, 1, 1};
+        int n3 = A3.length;
+        System.out.println(KSpecial(A3, n3, 3)); // True
+
+        // Test 4: Sirul 100 nu este 2-special
+        int[] A4 = {1, 0, 0};
+        int n4 = A4.length;
+        System.out.println(KSpecial(A4, n4, 2)); // False
+    }
 }
