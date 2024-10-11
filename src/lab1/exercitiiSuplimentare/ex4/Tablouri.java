@@ -3,9 +3,9 @@ package lab1.exercitiiSuplimentare.ex4;
 public class Tablouri {
 
     /**
-     * Functia pentru a construi si afisa matricea m[i][j] = a[i] * b[j]
-     * @param a
-     * @param b
+     * Functia asta construieste o matrice folosind formula metoda asta m[i][j] = a[i] * b[j],
+     * @param a un array, il putem identifica si ca un vector
+     * @param b un array, il putem identifica si ca un vector
      */
     public static double[][] calculeazaMatriceaM(double[] a, double[] b) {
         int n = a.length;
@@ -21,7 +21,12 @@ public class Tablouri {
         return matriceM;
     }
 
-    // Functia pentru a construi si afisa vectorul v[i] = min{a[i], b[i]}
+    /**
+     * Functia asta construieste un vector cu cele mai mici valori ale altor 2 vectori,
+     * comparatia intre valori se face in functie de pozitia pe care se afla, min(a[i], b[i]).
+     * @param a un array, il putem identifica si ca un vector
+     * @param b un array, il putem identifica si ca un vector
+     */
     public static double[] calculeazaVectorulV(double[] a, double[] b) {
         int n = a.length;
         double[] vectorV = new double[n];
@@ -43,7 +48,10 @@ public class Tablouri {
         }
     }
 
-    // Functia pentru afișarea unui vector
+    /**
+     * Functia asta are scop afisearea vectorului
+     * @param vector
+     */
     public static void afiseazaVector(double[] vector) {
         for (double element : vector) {
             System.out.print(element + " ");
@@ -51,20 +59,24 @@ public class Tablouri {
         System.out.println();
     }
 
-    public static void main(String[] args) {
-        // Initializam doua tablouri constante de numere reale
-        double[] a = {1.5, 2.5, 3.5};
-        double[] b = {4.0, 5.0, 6.0};
-
-        // Calculam si afisam matricea m
-        double[][] matriceM = calculeazaMatriceaM(a, b);
-        System.out.println("Matricea M:");
-        afiseazaMatrice(matriceM);
-
-        // Calculam si afisam vectorul v
-        double[] vectorV = calculeazaVectorulV(a, b);
-        System.out.println("Vectorul V:");
-        afiseazaVector(vectorV);
-    }
+//    public static void main(String[] args) {
+//        // Initializam doua tablouri constante de numere reale
+//        double[] a = {1.5, 2.5, 3.5};
+//        double[] b = {4.0, 5.0, 6.0};
+//
+//        // Calculam si afisam matricea m
+//        double[][] matriceM = calculeazaMatriceaM(a, b);
+//        System.out.println("Matricea M:");
+//        afiseazaMatrice(matriceM);
+//
+//        /**
+//         * 1. Calculam valoarea vectorului folosind methoda calculeazaVectorul, care are 2 parametri.
+//         * 2. Printam vectorul folosind functia afiseazaVector,
+//         *    care primeste ca parametru unic valoarea stocata in array-ul vectorV
+//         */
+//        double[] vectorV = calculeazaVectorulV(a, b);
+//        System.out.println("Vectorul V:");
+//        afiseazaVector(vectorV);
+//    }
 }
 
