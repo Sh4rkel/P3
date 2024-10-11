@@ -62,7 +62,7 @@ public class tests {
     @Test
     public void testIsKSpecialTooManyZeros() {
         /**
-         * Test 6: Sirul 1001 are mai mult de 1 zero Intre doi de 1, deci nu e k-special
+         * Test 6: Sirul 1001 are mai mult de 1 zero intre doi de 1, deci nu e k-special
          */
         int[] A6 = {1, 0, 0, 1};
         int n6 = A6.length;
