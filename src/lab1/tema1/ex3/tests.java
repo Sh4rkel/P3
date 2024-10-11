@@ -1,5 +1,9 @@
 package lab1.tema1.ex3;
 
+/**
+ * @author Daniel Filip
+ */
+
 public class tests {
     public static void testGetContourSize() {
         int[][] imag1 = {
