@@ -25,7 +25,7 @@ public class tests {
         double[] b = {4.0, 5.0, 2.0};
         double[] expectedV = {1.5, 2.5, 2.0};
 
-        // Verificam dacă vectorul calculat este corect
+        // Verificam daca vectorul calculat este corect
         assertArrayEquals(expectedV, Tablouri.calculeazaVectorulV(a, b), 0.0001);
     }
 
