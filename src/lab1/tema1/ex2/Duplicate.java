@@ -35,4 +35,10 @@ public class Duplicate {
 
         return result.toString();
     }
+
+    public static void main(String[] args) {
+        // Exemple
+        System.out.println(eliminaDuplicatele("abba...metttallica")); // "aba.metalica"
+        System.out.println(eliminaDuplicatele("hello world")); // "helo wrd"
+    }
 }
