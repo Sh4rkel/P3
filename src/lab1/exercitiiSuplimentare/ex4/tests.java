@@ -15,7 +15,7 @@ public class tests {
                 {14.0, 17.5, 21.0}
         };
 
-        // Verificam dacă matricea calculata este corecta
+        // Verificam daca matricea calculata este corecta
         assertArrayEquals(expectedM, Tablouri.calculeazaMatriceaM(a, b));
     }
 

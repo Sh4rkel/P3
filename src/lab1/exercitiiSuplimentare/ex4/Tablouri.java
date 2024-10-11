@@ -2,7 +2,11 @@ package lab1.exercitiiSuplimentare.ex4;
 
 public class Tablouri {
 
-    // Functia pentru a construi si afisa matricea m[i][j] = a[i] * b[j]
+    /**
+     * Functia pentru a construi si afisa matricea m[i][j] = a[i] * b[j]
+     * @param a
+     * @param b
+     */
     public static double[][] calculeazaMatriceaM(double[] a, double[] b) {
         int n = a.length;
         int m = b.length;
@@ -52,7 +56,7 @@ public class Tablouri {
         double[] a = {1.5, 2.5, 3.5};
         double[] b = {4.0, 5.0, 6.0};
 
-        // Calculam și afisam matricea m
+        // Calculam si afisam matricea m
         double[][] matriceM = calculeazaMatriceaM(a, b);
         System.out.println("Matricea M:");
         afiseazaMatrice(matriceM);
