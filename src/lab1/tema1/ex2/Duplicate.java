@@ -6,7 +6,9 @@ package lab1.tema1.ex2;
 
 public class Duplicate {
     /**
-     *
+     * Eliminam daor duplicatele, nu si aparitile multiple ale literelor,
+     * spre exemplu pentru fraza Uniiiiversitatttea de Vest o sa avem
+     * "Universitatea de Vest", nu "Universtat d"
      * @param input
      * @return result in format string
      */
