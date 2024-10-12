@@ -2,6 +2,8 @@ package lab1.tema1.ex1;
 
 /**
  * <h1>K Special Number</h1>
+ * <p>Un numar este k special daca avem un numar de k biti egal cu 1,
+ * dar intre acesti biti de 1 nu se pot afla mai mult de un bit de 0</p>
  * @author Daniel Filip
  */
 
