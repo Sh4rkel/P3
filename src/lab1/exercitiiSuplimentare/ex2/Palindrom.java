@@ -33,9 +33,8 @@ public class Palindrom {
         return true; // Daca nu am gasit diferente, este palindrom
     }
 }
-
 /**
- *  !!! Aceasta varianta nu a fost buna, deaorece nu putem stii cate cifre are numarul introdus,
+ *  !!! Aceasta varianta nu a fost buna, deaorece nu era specificata marimea numarului stii cate cifre are numarul introdus,
  *  dar mai este si o problema de spatiu si timp in rularea acestui algoritm destul de basic pentru palindrom !!!
  * @param numar
  *
