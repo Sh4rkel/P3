@@ -1,5 +1,13 @@
 package lab1.exercitiiSuplimentare.ex2;
 
+/**
+ * <h1>Palindrom</h1>
+ * <p>Ca un numar sa fie palindrom trebuie ca numarul sa fie la fel ca si inversul acestuia</p>
+ * @author Daniel Filip
+ */
+
+
+
 public class Palindrom {
 
     /**
@@ -7,7 +15,7 @@ public class Palindrom {
      * @param number
      * @return True daca e palindrom, altfel retuneaza False
      */
-    public static boolean isPalindrome(int number) {
+    public static boolean isPalindrom(int number) {
         /**
          * Convertim numarul intr-un sir de caractere,
          * dar mai intai ne asiguram ca este positiv, deoarece un numar negativ are si "-"
