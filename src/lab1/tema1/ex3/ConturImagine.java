@@ -1,6 +1,7 @@
 package lab1.tema1.ex3;
 
 /**
+ * <h1>Definirea conturului unei imagini</h1>
  * @author Daniel Filip
  */
 
