@@ -1,6 +1,7 @@
 package lab1.tema1.ex3;
 
 /**
+ * <h1>Testele pentru clasa ConturImagine</h1>
  * @author Daniel Filip
  */
 

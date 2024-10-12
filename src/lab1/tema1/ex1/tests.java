@@ -1,6 +1,7 @@
 package lab1.tema1.ex1;
 
 /**
+ * <h1>Testele pentru clasa KSpecial</h1>
  * @author Daniel Filip
  */
 
