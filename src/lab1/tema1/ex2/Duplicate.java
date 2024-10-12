@@ -1,6 +1,7 @@
 package lab1.tema1.ex2;
 
 /**
+ * <h1>Eliminarea duplicatelor</h1>
  * @author Daniel Filip
  */
 
